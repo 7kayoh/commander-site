@@ -3,10 +3,9 @@ This document contains upcoming features for Commander, categorized based on the
 
 Please note this document is subject to change and features listed in this page may not be available in the final release. If you happen to have ideas for our next release, please feel free to suggest in our GitHub, or in Discord.
 
-# 1.5.0 ???
-|Name|Description|Status|
-|:--:|:--|:--:|
-|???|???|???|
+# 2.0.0 Alpine
+
+Visit [evoincorp.github.io](https://evoincorp.github.io/commander)
 
 # 1.4.0 Lilium
 |Name|Description|Status|
