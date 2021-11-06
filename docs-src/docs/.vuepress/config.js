@@ -106,5 +106,15 @@ module.exports = {
 			}
 		]
 	},
+
+	plugins: [
+		[
+			'@vuepress/plugin-search',
+			{
+			  // exclude the homepage
+			  isSearchable: (page) => page.path !== '/',
+			},
+		],
+	],
 	dest: 'public'
 }
