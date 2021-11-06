@@ -1,23 +1,17 @@
-# Package/Themes submission guidelines
-This document includes a set of guidelines for submitting packages or themes for Commander in the community. By participating, you are expected to follow the guidelines at **all** times. Any inappropriate behaviour may lead to a ban from publishing packages/themes. In this document, you will find three sections, which is [General](#General), [Packages](#Packages), and [Themes](#Themes). While submitting your creation to Commander, please follow both the guidelines in [General](#General) section, and the corresponding section for that category of creation (Ex. General + Themes, vice versa).
+# Submitting your creation
 
-## Table of Content
-[[toc]]
+Our Discord community server hosts community-made packages, so users can browse the catalogue and find what they need for Commander.
+
+If you want to submit your creation, make sure to follow the guidelines:
 
 ## General
-:::warning
-All guidelines found in this section **must** be followed at all times.
-:::
-
-In this section, you will find guidelines on how you should communicate with others within the community as a package/theme developer, as well as what you are expected to do in the community.
 
 1. You are expected to help the user who is using your creation
 2. Ignorance of an issue or a question raised by the community about your creation is not acceptable
 3. While helping an user with the problem they are encountering in your creation, you are expected to be polite and patient at all times
 4. Avoid using technical terms if the user is not an experienced developer
 
-## Packages
-If you are publishing a package for Commander, please follow this set of guidelines, along with the ones in [General](#General).
+## Package
 
 1. Packages should not be inappropriate, or violates Roblox's ToU/ToS
 2. Do **not** make similar packages with slight edits
@@ -28,8 +22,7 @@ If you are publishing a package for Commander, please follow this set of guideli
 7. Packages should **not** have a big impact on the game's performance
 8. Avoid game-specific package, by that, you should **never** be relying on the game's resources.
 
-## Themes
-If you are publishing a theme for Commander, please follow this set of guidelines, along with the ones in [General](#General).
+## Theme
 
 1. Themes should not be inappropriate, or violates Roblox's ToU/ToS
 2. Do **not** make similar themes with slight edits, this excludes dark/light themes and tinted themes. Please submit a pull request to the corresponding theme's repository if you want to propose changes
@@ -38,7 +31,3 @@ If you are publishing a theme for Commander, please follow this set of guideline
 5. In most cases, please indicate your theme's style (Dark/Light) if your theme has more than one style
 6. Themes should be user-friendly, you can find resources/how-to's on making accessible & user-friendly themes in the web
 7. Avoid theme that contains copyrighted assets
-
-## Notes
-- Please note that the guidelines found in this document are subject to change. If you wish to be notified for changes, please **watch** this repository.
-- The guidelines here is not complete, if you happen to have suggestions for the guidelines, please create an issue in this repository.

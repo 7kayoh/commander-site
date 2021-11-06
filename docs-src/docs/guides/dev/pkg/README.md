@@ -1,18 +1,28 @@
-# Making packages
+# Making a package
 :::warning
-Making a package requires a large amount of knowledge of Luau
+Requires Luau knowledge
 :::
 
-Packages are modules with code that will be ran when the user executes the corresponding command. 
+Package is a module with code inside for a command, it is extremely powerful as it has access to Commander's API.
 
-By default, Commander ship with packages that are useful to the majority, but if you find there's not enough packages, feel free to visit our [Discord community](https://discord.gg/RzxxD7YCaU), or you can create your own.
+By default, Commander ship with packages that are useful for the majority, but if you can not find the package you need, you can try giving our Discord community a visit, head to [this page](https://evoincorp.github.io) to learn more.
 
-**This guide will introduce and teach you how to make your own package with a kick command as an example.**
+However, if you still can not find the package you want in the community, you can create your own!
 
-## How packages work
-When Commander is being loaded, the system itself will fetch every packages inside the `Packages` folder, and then verify whether the package is both correctly formatted and error-free. Then, the system will assign all system packages such as the [API](../../ref/api/) to the package, and finally call `.Execute` on the package with type `firstRun`.
+## The lifecycle of a package
 
-When an administrator has joined the game, the system will first fetch commands that can be ran by the user, and finally send the list of the packages to be created in the panel with their corresponding location.
+Packages have lifecycle, in the lifecycle, there are multiple stages. When you are building a package, brief understanding of the lifecycle is required.
+
+Here is concentrated version of the lifecycle:
+1. Commander loads
+2. Preparing (load settings, move packages, etc)
+3. Load packages
+4. Check packages
+5. Symlink system packages to packages
+6. Call `.Execute` with type `firstRun`
+7. Wait for user request
+
+If you want to execute a piece of code at the beginning, do it when the type is `firstRun`.
 
 ### Location options
 By default, there are **two** locations for packages to load in, either **Server** or **Player**.
@@ -93,7 +103,7 @@ That's where the `API.sendModalToPlayer` kicks in. This function will send a req
 :::danger Read the docs!
 Callback hell affect your code readability and maintainability, as `API.sendModalToPlayer` returns a RBXScriptSignal, you can simply just use `:Wait()` instead of using `:Connect`.
 
-Apart from that, we **highly** recommend to use `:Wait()` for this, you can learn more by reading our [Code of Conduct](../code/)
+Apart from that, we **highly** recommend to use `:Wait()` for this, you can learn more by reading our Code of Conduct
 :::
 
 With `API.sendModalToPlayer`, your code should look something like this:
@@ -146,4 +156,4 @@ return module
 :tada: Congratulations, you have successfully made your first package!
 
 ## Continue...
-Our [API](../../ref/api/) documentation has it all for you to discover, if you have a question or encountered a problem with your own package, feel free to ask in our [Discord Community](https://discord.gg/RzxxD7YCaU).
+Our API documentation has it all for you to explore, if you have a question or encountered a problem with your own package, feel free to ask in our Discord.
