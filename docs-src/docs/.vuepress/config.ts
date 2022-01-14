@@ -25,10 +25,6 @@ export default defineUserConfig<DefaultThemeOptions>({
 		}
 	},
 
-	bundler: 
-		process.env.DOCS_BUNDLER ??
-		'@vuepress/vite',
-
 	themeConfig: {
 		logo: '/images/logo.png',
 		logoDark: '/images/dlogo.png',
