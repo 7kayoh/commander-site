@@ -173,3 +173,108 @@ html.dark .DocSearch {
   --docsearch-footer-shadow: inset 0 1px 0 0 rgba(73, 76, 106, 0.5),
     0 -4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+
+@keyframes fade-in {
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes swift-up {
+  to {
+    top: 0rem;
+  }
+}
+
+.theme-container.homePage .theme-default-content {
+  background-color: black;
+  padding: 25px 25px 25px 25px;
+  margin: 0;
+  max-width: 100%;
+}
+
+.theme-container.homePage .theme-default-content .top {
+  padding: 3rem;
+  padding-bottom: 0rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url("images/bg.jpeg");
+}
+
+.theme-container.homePage .theme-default-content .content {
+  position: relative;
+  top: .8rem;
+  opacity: 0;
+  padding: 0;
+  padding-top: 12rem;
+  padding-left: 3rem;
+  animation: 1s swift-up ease-out forwards, .5s fade-in ease-out forwards;
+  animation-delay: 1.2s;
+}
+
+.theme-container.homePage .theme-default-content .title {
+  font-size: 5rem;
+  line-height: 5rem;
+  font-weight: 200;
+  margin: 2.5rem 0;
+}
+
+.theme-container.homePage .theme-default-content .title span {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  top: 2rem;
+  animation: 0.5s swift-up cubic-bezier(0.19, 1.28, 0.66, 1.38) forwards;
+  padding-right: 1rem;
+  color: white
+}
+
+.theme-container.homePage .theme-default-content .title i {
+  font-style: normal;
+  position: relative;
+  top: 5rem;
+  animation: 0.5s swift-up cubic-bezier(0.28, 0.35, 0, 1.5) forwards;
+}
+
+.theme-container.homePage .theme-default-content .title span i {
+  animation-delay: calc(var(--i) * 0.05s);
+}
+
+.theme-container.homePage .theme-default-content h1 {
+  font-size: 5rem;
+  line-height: 5rem;
+  font-weight: 200;
+  padding-top: 2rem;
+  margin-bottom: 0;
+}
+
+.theme-container.homePage .theme-default-content a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: white;
+  z-index: 1;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+
+.theme-container.homePage .theme-default-content p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding-right: 3rem;
+}
+
+.theme-container.homePage .theme-default-content a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: .07em;
+  height: .1em;
+  width: 100%;
+  background: linear-gradient(110deg, #e1f549, #29d0be, #6cb8ea, #ff5959);
+  z-index: -1;
+  transition: height .25s cubic-bezier(.6,0,.4,1);
+}
+
+.theme-container.homePage .theme-default-content a:hover::after {
+  height: .2em;
+}
