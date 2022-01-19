@@ -99,5 +99,3 @@ Here's a table of configurations available:
 |Inherits|(Optional), which group to inherit. The group will inherit permission settings specified in this field|`"Moderator"`|
 |Priority|Group priority, the greater it is, the higher the group is in ranking|`7`|
 |Permission|What commands the group is allowed to use, write down the command name to grant, or use an asterick symbol for all commands (`*`)|`{"Ban", "Unban", "Kick", "Kill"}`|
-
-____

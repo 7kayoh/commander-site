@@ -1,14 +1,14 @@
 :root {
   // brand colors
-  --c-brand: #7c4dff;
-  --c-brand-light: #a685ff;
+  --c-brand: #000000;
+  --c-brand-light: #000000;
 
   // background colors
   --c-bg: #ffffff;
   --c-bg-light: #ffffff;
-  --c-bg-lighter: #fffffff5;
-  --c-bg-navbar: var(--c-bg-lighter);
-  --c-bg-sidebar: var(--c-bg-light);
+  --c-bg-lighter: #ffffff;
+  --c-bg-navbar: rgba(255, 255, 255, .8);
+  --c-bg-sidebar: rgba(255, 255, 255, .8);
   --c-bg-arrow: #c9c9c9;
 
   // text colors
@@ -20,23 +20,23 @@
   --c-text-quote: #999999;
 
   // border colors
-  --c-border: #cccccc;
-  --c-border-dark: #dfe2e5;
+  --c-border: #e6e6e6;
+  --c-border-dark: #e9e9e9;
 
   // custom container colors
   --c-tip: #4289b9;
-  --c-tip-bg: var(--c-bg-light);
+  --c-tip-bg: #f5f5f5;
   --c-tip-title: var(--c-text);
   --c-tip-text: var(--c-text);
   --c-tip-text-accent: var(--c-text-accent);
   --c-warning: #e7c400;
-  --c-warning-bg: #fffdef;
-  --c-warning-title: #8d7800;
+  --c-warning-bg: #f5f5f5;
+  --c-warning-title: #d68b00;
   --c-warning-text: #111111;
   --c-warning-text-accent: var(--c-text);
   --c-danger: #cc0000;
-  --c-danger-bg: #ffe4e4;
-  --c-danger-title: #cc0000;
+  --c-danger-bg: #f5f5f5;
+  --c-danger-title: #ff0040;
   --c-danger-text: #111111;
   --c-danger-text-accent: var(--c-text);
   --c-details-bg: #eeeeee;
@@ -51,9 +51,9 @@
   --t-transform: 0.6s ease;
 
   // code blocks vars
-  --code-bg-color: #332834;
-  --code-hl-bg-color: rgba(0, 0, 0, 0.66);
-  --code-ln-color: rgb(255, 255, 255);
+  --code-bg-color: #2c2c2c;
+  --code-hl-bg-color: rgba(90, 90, 90, 0.66);
+  --code-ln-color: rgb(165, 165, 165);
   --code-ln-wrapper-width: 3.5rem;
 
   // font vars
@@ -62,12 +62,12 @@
   --font-family-code: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 
   // layout vars
-  --navbar-height: 3.6rem;
-  --navbar-padding-v: 0.7rem;
-  --navbar-padding-h: 1.5rem;
+  --navbar-height: 4rem;
+  --navbar-padding-v: 0.8rem;
+  --navbar-padding-h: 0.8rem;
   --sidebar-width: 20rem;
   --sidebar-width-mobile: calc(var(--sidebar-width) * 0.82);
-  --content-width: 740px;
+  --content-width: 650px;
   --homepage-width: 960px;
 }
 
@@ -129,38 +129,46 @@
 
 html.dark {
   // brand colors
-  --c-brand: #b397ff;
-  --c-brand-light: #ac98e4;
+  --c-brand: #ffffff;
+  --c-brand-light: #ffffff;
 
   // background colors
-  --c-bg: #1c1a1d;
-  --c-bg-light: #1f1c1f;
-  --c-bg-lighter: #28262bfb;
+  --c-bg: rgb(20, 20, 20);
+  --c-bg-light: rgb(31, 31, 31);
+  --c-bg-lighter: rgb(0, 0, 0);
 
   // text colors
-  --c-text: #c7c7c7;
-  --c-text-light: #ae96b7;
-  --c-text-lighter: #8b9eb0;
-  --c-text-lightest: #8094a8;
+  --c-text: #dbdbdb;
+  --c-text-light: #dbdbdb;
+  --c-text-lighter: #dbdbdb;
+  --c-text-lightest: #dbdbdb;
 
   // border colors
-  --c-border: #3c353f;
-  --c-border-dark: #3c353f;
+  --c-border: #525252;
+  --c-border-dark: #292929;
 
   // custom container colors
-  --c-tip: #4289b9;
-  --c-warning: #f0c802;
-  --c-warning-bg: #3d361f;
-  --c-warning-title: #ceac03;
+  --c-tip: #34a2ec;
+  --c-tip-title: #34a2ec;
+  --c-tip-bg: #272727;
+  --c-warning: #ffd500;
+  --c-warning-bg: #272727;
+  --c-warning-title: #ffd500;
   --c-warning-text: #d8d8d8;
-  --c-danger: #940000;
-  --c-danger-bg: #2e2424;
-  --c-danger-title: #ff4444;
+  --c-danger: #ff0000;
+  --c-danger-bg: #272727;
+  --c-danger-title: #f73030;
   --c-danger-text: #d8d8d8;
-  --c-details-bg: #3a3243;
+  --c-details-bg: #272727;
 
-  // code blocks vars
-  --code-hl-bg-color: #433646;
+  --c-bg-navbar: rgba(25, 25, 25, .5);
+  --c-bg-sidebar: rgba(25, 25, 25, .8);
+
+  // codeblock
+  --code-bg-color: #181818;
+  --code-hl-bg-color: rgba(87, 87, 87, 0.66);
+  --code-ln-color: rgb(77, 77, 77);
+  --code-ln-wrapper-width: 2.5rem;
 }
 
 // plugin-docsearch
@@ -173,6 +181,78 @@ html.dark .DocSearch {
   --docsearch-footer-shadow: inset 0 1px 0 0 rgba(73, 76, 106, 0.5),
     0 -4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+
+// Navbar
+.navbar, .navbar-dropdown {
+
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+}
+
+.sidebar {
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+}
+
+// Generic
+h1 {
+  font-weight: 200;
+  font-size: 5rem
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.5rem
+}
+
+h4 {
+  font-weight: 800;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  opacity: 80%
+}
+
+p {
+  margin-top: 5px
+}
+
+thead {
+  border: 0;
+  background-color: #1f1f1f;
+}
+
+th, td {
+  border: 0;
+  border-bottom: 1px solid #505050
+}
+
+span.prev a, span.next a {
+  font-size: 1.4rem;
+  font-weight: 300
+}
+
+span.prev a {
+  opacity: 60%
+}
+
+.custom-container {
+  border-radius: 5px
+}
+
+p.custom-container-title {
+  padding-top: 0.5rem
+}
+
+.page .theme-default-content {
+  padding-top: 7rem
+}
+
+// Home Page
 
 @keyframes fade-in {
   to {

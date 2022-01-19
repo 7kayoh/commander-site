@@ -23,7 +23,7 @@ navbar: false
     <span><i style="--i: 12">That's</i></span>
     <span><i style="--i: 14; font-weight:800 ">Commander</i></span>
 </p>
-<a href="./home/intro">Get Started →</a>
+<a href="./home/intro.html">Get Started →</a>
 </div>
 
 <div class="content">
@@ -40,13 +40,13 @@ navbar: false
 <div align="center" style="padding-top: 30rem; padding-bottom: 30rem">
 <h1>and all that, for free</h1>
 <p style="padding: 0">100% Open Source and Free, no subscriptions nor DLCs</p>
-<a href="./home/intro" style="margin: 0">Install →</a>
+<a href="./home/intro.html" style="margin: 0">Install →</a>
 </div>
 </div>
 <div align="center" style="padding-bottom: 12rem">
 <img src="/images/icon.png" height=50>
 <br>
 <br>
-<a href="./home/intro" style="margin: 0; font-size: 1rem; font-weight: 400">Getting Started</a> | <a href="./guides/config/intro" style="margin: 0; font-size: 1rem; font-weight: 400">Configure Commander</a> | <a href="./ref/api" style="margin: 0; font-size: 1rem; font-weight: 400">API Reference</a> | <a href="https://github.com/7kayoh/commander.git" style="margin: 0; font-size: 1rem; font-weight: 400">GitHub</a>
+<a href="./home/intro.html" style="margin: 0; font-size: 1rem; font-weight: 400">Getting Started</a> | <a href="./guides/config/intro.html" style="margin: 0; font-size: 1rem; font-weight: 400">Configure Commander</a> | <a href="./ref/api.html" style="margin: 0; font-size: 1rem; font-weight: 400">API Reference</a> | <a href="https://github.com/7kayoh/commander.git" style="margin: 0; font-size: 1rem; font-weight: 400">GitHub</a>
 </div>
 <code>© 2022 Evo Incorp. Commander by Evo and the Command "Button" logo is reserved to Evo Incorp.</code>
