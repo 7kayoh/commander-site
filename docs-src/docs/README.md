@@ -8,7 +8,7 @@ navbar: false
 
 <div class="page">
 <div class="top">
-<img src="images/banner.png" style="object-fit: cover; border-radius: 15px" height=70px>
+<img src="/images/banner.png" style="object-fit: cover; border-radius: 15px" height=70px>
 <p class="title">
     <span><i style="--i: 1">Moderation</i></span>
     <span><i style="--i: 1">done</i></span>
@@ -44,7 +44,7 @@ navbar: false
 </div>
 </div>
 <div align="center" style="padding-bottom: 12rem">
-<img src="images/icon.png" height=50>
+<img src="/images/icon.png" height=50>
 <br>
 <br>
 <a href="./home/intro" style="margin: 0; font-size: 1rem; font-weight: 400">Getting Started</a> | <a href="./guides/config/intro" style="margin: 0; font-size: 1rem; font-weight: 400">Configure Commander</a> | <a href="./ref/api" style="margin: 0; font-size: 1rem; font-weight: 400">API Reference</a> | <a href="https://github.com/7kayoh/commander.git" style="margin: 0; font-size: 1rem; font-weight: 400">GitHub</a>
