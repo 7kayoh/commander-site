@@ -1,0 +1,10 @@
+{
+  "title": "Commander Documentation",
+  "url": "https://commander-4.vercel.app",
+  "logo": {
+    "light": "/logo.png",
+    "dark": "/logo-dark.png"
+  },
+  "github": "7kayoh/commander-site",
+  "twitter": "@7kayoh"
+}
