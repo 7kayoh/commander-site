@@ -49,4 +49,4 @@ navbar: false
 <br>
 <a href="./home/intro.html" style="margin: 0; font-size: 1rem; font-weight: 400">Getting Started</a> | <a href="./guides/config/intro.html" style="margin: 0; font-size: 1rem; font-weight: 400">Configure Commander</a> | <a href="./ref/api.html" style="margin: 0; font-size: 1rem; font-weight: 400">API Reference</a> | <a href="https://github.com/7kayoh/commander.git" style="margin: 0; font-size: 1rem; font-weight: 400">GitHub</a>
 </div>
-<code>© 2022 Evo Incorp. Commander by Evo and the Command "Button" logo is reserved to Evo Incorp.</code>
+<code>© 2022 Frappé Development. Commander by Frappé Development and the Command "Button" logo is reserved to Frappé Development.</code>
